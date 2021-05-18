@@ -1,0 +1,61 @@
+body {
+    background: #000;
+    background: linear-gradient(90deg, #000 0%, rgba(44,100,200,1) 50%, #000 100%);
+    margin: 0;
+}
+
+.main-container {
+    max-width: min(1080px, calc((100vh - 16px - 480px - 52px) * 16 / 9));
+    margin: 0 auto;
+    padding: 8px 0;
+    background-color: #000;
+    height: calc(100% - 16px);
+}
+
+.header {
+
+}
+
+.header img {
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 32px;
+    max-width: 480px;
+    margin: 10px auto;
+}
+
+.links .twitter>* {
+    margin-top: 2px;
+}
+
+.links .twitter>a {
+    color: white;
+    background-color: #1b95e0;
+}
+
+.links .discord button {
+    background-color: #5865F2;
+    border: 2px solid #5865F2;
+    color: #fff;
+
+    display: flex;
+    height: 28px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.links .discord button img {
+    height: 28px;
+    margin-top: -2px;
+}
+
+.links .discord button span {
+    height: 22px;
+    line-height: 22px;
+    margin-left: 4px;
+}

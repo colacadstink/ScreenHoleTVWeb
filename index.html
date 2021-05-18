@@ -1,8 +1,41 @@
 <html>
 <head>
-<title>Screen Hole TV</title>
+    <title>Screen Hole TV</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-Hello world!
+<div class="main-container">
+    <div class="header">
+        <img src="banner.jpg">
+    </div>
+    <div class="links">
+        <div class="twitter">
+            <a href="https://twitter.com/ScreenHoleTV" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @ScreenHoleTV</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="discord">
+            <form method="get" action="https://discord.gg/Tz4kgFRA4d">
+                <button>
+                    <img src="Discord-Logo-Black.png">
+                    <span>Join our Discord</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="twitch-embed" id="twitch-embed"></div>
+</div>
+
+<!-- Load the Twitch embed JavaScript file -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+  const embed = new Twitch.Embed("twitch-embed", {
+    width: "100%",
+    height: 480,
+    autoplay: true,
+    channel: "screenholetv",
+    parent: ["screenholetv.com", "localhost"]
+  });
+  console.log(embed);
+</script>
 </body>
 </html>
